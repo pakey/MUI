@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>Hello APP</title>
+    <link rel="stylesheet" type="text/css" href="./css/ptm.css" />
+    <style type="text/css">
+        .ptm-list-view-cell { line-height: 22px;}
+    </style>
+</head>
+<body>
+<header id="ptm-header" class="ptm-bg-primary">
+    <div class="ptm-bar ptm-bar-nav ptm-bar-primary">
+        <a class="ptm-pull-left" href="index.html">
+            <span class="ptm-iconfont ptm-icon-left ptm-text-bold"></span>返回
+        </a>
+        <div class="ptm-title">进度条</div>
+    </div>
+</header>
+<p class="ptm-padded-10">
+    radio效果，新版本中定义在了.ptm-form里面，可以通过.ptm-pull-right控制位置
+</p>
+<div class="ptm-content">
+    <div class="ptm-form">
+        <div class="ptm-input-row">
+            <label class="ptm-input-addon">radio</label>
+            <div class="ptm-pull-right">
+                <input class="ptm-radio" type="radio" name="demo1" checked><div class="ptm-radio-name">选项一</div>
+                <input class="ptm-radio" type="radio" name="demo1"><div class="ptm-radio-name">选项二</div>
+            </div>
+        </div>
+        <div class="ptm-input-row">
+            <label class="ptm-input-addon">radio</label>
+            <input class="ptm-pull-right ptm-radio ptm-radio-info" type="radio" name="demo">
+        </div>
+        <div class="ptm-input-row">
+            <label class="ptm-input-addon">radio</label>
+            <input class="ptm-pull-right ptm-radio ptm-radio-success" type="radio" name="demo" checked>
+        </div>
+        <div class="ptm-input-row">
+            <input class="ptm-radio ptm-radio-danger" type="radio" name="demo">
+            <label class="ptm-input-addon">radio</label>
+        </div>
+        <div class="ptm-input-row">
+            <input class="ptm-radio ptm-radio-warning" type="radio" name="demo">
+            <label class="ptm-input-addon">radio</label>
+        </div>
+    </div>
+</div>
+<div class="ptm-content ptm-card" style="margin-top:15px;">
+    <div class="ptm-form">
+        <div class="ptm-input-row">
+            <label class="ptm-input-addon">radio</label>
+            <div class="ptm-pull-right"><input class="ptm-radio" type="radio" name="demo1"></div>
+        </div>
+        <div class="ptm-input-row">
+            <label class="ptm-input-addon">radio</label>
+            <div class="ptm-pull-right"><input class="ptm-radio" type="radio" name="demo2" disabled></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./script/jquery.min.js"></script>
+<script type="text/javascript" src="./script/ptm.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <title>Hello APP</title>
+    <link rel="stylesheet" type="text/css" href="./css/ptm.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
+</head>
+<body>
+<header id="ptm-header" class="ptm-bg-primary">
+    <div class="ptm-bar ptm-bar-nav ptm-bar-primary">
+        <a class="ptm-pull-left">
+            <span class="ptm-iconfont ptm-icon-left ptm-text-bold"></span>返回
+        </a>
+        <div class="ptm-title">按钮</div>
+    </div>
+</header>
+<div class="ptm-content">
+    <p class="ptm-padded-10 ptm-text-center">普通样式</p>
+    <div class="ptm-form">
+        <div class="ptm-input-row">
+            <label class="ptm-input-addon">name</label>
+            <input type="text" class="ptm-input" placeholder="name" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">pass</span>
+            <input type="password" class="ptm-input" placeholder="password" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">num</span>
+            <input type="number" class="ptm-input" placeholder="number" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">email</span>
+            <input type="email" class="ptm-input" placeholder="email" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">url</span>
+            <input type="url" class="ptm-input" placeholder="http://" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">date</span>
+            <input type="date" class="ptm-input" placeholder="" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">time</span>
+            <input type="datetime-local" class="ptm-input" placeholder="" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">age</span>
+            <div class="ptm-range">
+                <input type="hidden" name="age">
+                <input type="range" class="ptm-range-primary" value="30" max="100" min="1" step="1" id="range" />
+            </div>
+        </div>
+        <div class="ptm-btn-row">
+            <div class="ptm-btn ptm-btn-success" onclick="return false;">确认</div>
+            &nbsp;&nbsp;
+            <div class="ptm-btn ptm-btn-warning" onclick="return false;">取消</div>
+        </div>
+    </div>
+</div>
+<div class="ptm-content">
+    <p class="ptm-padded-10 ptm-text-center">带图标的表单</p>
+    <div class="ptm-form">
+        <div class="ptm-input-row">
+            <i class="ptm-input-addon  ptm-iconfont ptm-icon-people"></i>
+            <input type="text" class="ptm-input" placeholder="name" />
+        </div>
+        <div class="ptm-input-row">
+            <input type="password" class="ptm-input" placeholder="password" />
+            <i class="ptm-input-addon  ptm-iconfont ptm-icon-lock"></i>
+        </div>
+        <div class="ptm-btn-row">
+            <div class="ptm-btn ptm-btn-success" onclick="return false;">确认</div>
+            &nbsp;&nbsp;
+            <div class="ptm-btn ptm-btn-warning" onclick="return false;">取消</div>
+        </div>
+    </div>
+</div>
+<div class="ptm-content">
+    <p class="ptm-padded-10 ptm-text-center">带图标的表单</p>
+    <div class="ptm-form">
+        <div class="ptm-input-row">
+            <i class="ptm-input-addon  ptm-iconfont ptm-icon-people"></i>
+            <input type="text" class="ptm-input" placeholder="name" />
+        </div>
+        <div class="ptm-input-row">
+            <input type="password" class="ptm-input" placeholder="password" />
+            <i class="ptm-input-addon  ptm-iconfont ptm-icon-lock"></i>
+        </div>
+    </div>
+</div>
+<p class="ptm-padded-10 ptm-text-center">圆角名片样式</p>
+<div class="ptm-card">
+    <div class="ptm-form">
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">name</span>
+            <input type="text" class="ptm-input" placeholder="name" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">pass</span>
+            <input type="password" class="ptm-input" placeholder="password" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">num</span>
+            <input type="number" class="ptm-input" placeholder="number" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">email</span>
+            <input type="email" class="ptm-input" placeholder="email" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">url</span>
+            <input type="url" class="ptm-input" placeholder="http://" />
+        </div>
+        <div class="ptm-btn-row">
+            <div class="ptm-btn ptm-btn-block ptm-btn-success" onclick="return false;">确认</div>
+        </div>
+    </div>
+</div>
+<p class="ptm-padded-10 ptm-text-center">圆角名片样式</p>
+<div class="ptm-card ptm-noborder">
+    <div class="ptm-form">
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">name</span>
+            <input type="text" class="ptm-input" placeholder="name" />
+        </div>
+        <div class="ptm-input-row">
+            <span class="ptm-input-addon">pass</span>
+            <input type="password" class="ptm-input" placeholder="password" />
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./script/zepto.min.js"></script>
+<script type="text/javascript" src="./script/ptm.js"></script>
+<script type="text/javascript">
+    $ptm.range($('#range'), function (ret) {
+        $('[name=age]').val(ret);
+    });
+</script>
+</body>
+</html>

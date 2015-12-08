@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>Hello APP</title>
+    <link rel="stylesheet" type="text/css" href="./css/ptm.css" />
+    <style type="text/css">
+        p {
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<header id="ptm-header" class="ptm-bg-primary">
+    <div class="ptm-bar ptm-bar-nav ptm-bar-primary">
+        <a class="ptm-pull-left" href="index.html">
+            <span class="ptm-iconfont ptm-icon-left ptm-text-bold"></span>返回
+        </a>
+        <div class="ptm-title">滑块</div>
+    </div>
+</header>
+<div class="ptm-content ptm-padded-15">
+    <p>带有提示的滑块：<span id="value-1">30</span></p>
+    <div class="ptm-range" style="margin-top:30px;">
+        <input type="range" class="ptm-range-danger" value="30" max="100" min="1" step="1" id="range" />
+    </div>
+</div>
+<div class="ptm-content ptm-padded-15">
+    <p>带有提示的滑块：<span id="value-2">40</span></p>
+    <div class="ptm-range" style="margin-top:30px;">
+        <input type="range" value="40" max="100" min="1" step="1" id="range2" />
+    </div>
+</div>
+<div class="ptm-content ptm-padded-15">
+    <p>普通滑块：<span id="value">50</span></p>
+    <div class="ptm-range"><input type="range" value="50" max="100" min="1" class="ptm-range-primary demo" /></div>
+    <div class="ptm-range"><input type="range" value="50" max="100" min="1" class="ptm-range-info demo" /></div>
+    <div class="ptm-range"><input type="range" value="50" max="100" min="1" class="ptm-range-warning demo" /></div>
+</div>
+<script type="text/javascript" src="./script/zepto.min.js"></script>
+<script type="text/javascript" src="./script/ptm.js"></script>
+<script type="text/javascript">
+
+    $ptm.range($('#range'),function(ret){
+        $('#value-1').text(ret);
+    });
+    $ptm.range($('#range2'),function(ret){
+        $('#value-2').text(ret);
+    });
+    var demo = $(".demo");
+    $.each(demo,function(k,obj){
+        $(obj).on('change',function(){
+            $('#value').text(this.value)
+        })
+    })
+</script>
+</body>
+</html>

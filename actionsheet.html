@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>Hello APP</title>
+    <link rel="stylesheet" type="text/css" href="./css/ptm.css" />
+    <style type="text/css">
+        body {
+            height: auto;
+        }
+        .ptm-content-padded {
+            padding-top: 15px;
+        }
+        .ptm-btn{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<header class="ptm-bg-primary">
+    <div class="ptm-bar ptm-bar-nav ptm-bar-primary">
+        <a class="ptm-pull-left" href="index.html">
+            <span class="ptm-iconfont ptm-icon-left ptm-text-bold"></span>返回
+        </a>
+        <div class="ptm-title">ActionSheet</div>
+    </div>
+</header>
+<div class="ptm-content">
+    <div class="ptm-content-padded">
+        <div class="ptm-btn ptm-btn-success ptm-block" onclick="$ptm.actionsheet.open()">显示</div>
+    </div>
+</div>
+<div>
+    <div class="ptm-actionsheet-mask"></div>
+    <div class="ptm-actionsheet" >
+        <div class="ptm-actionsheet-menu">
+            <div class="ptm-actionsheet-item">示例菜单</div>
+            <div class="ptm-actionsheet-item">示例菜单</div>
+            <div class="ptm-actionsheet-item">示例菜单</div>
+            <div class="ptm-actionsheet-item">示例菜单</div>
+        </div>
+        <div class="ptm-actionsheet-action">
+            <div class="ptm-actionsheet-item" id="actionsheet_cancel">取消</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./script/jquery.min.js"></script>
+<script type="text/javascript" src="./script/ptm.js"></script>
+</body>
+</html>

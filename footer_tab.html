@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>Hello APP</title>
+    <link rel="stylesheet" type="text/css" href="./css/ptm.css" />
+    <style>.ptm-bar {
+        margin-bottom: 15px;
+    }
+    </style>
+</head>
+<body>
+<header id="ptm-header" class="ptm-bg-primary">
+    <div class="ptm-bar ptm-bar-nav ptm-bar-primary">
+        <a class="ptm-pull-left" href="index.html">
+            <span class="ptm-iconfont ptm-icon-left ptm-text-bold"></span>返回
+        </a>
+        <div class="ptm-title">进度条</div>
+    </div>
+</header>
+<section class="ptm-content">
+    <div class="ptm-tab-content-item active">1111</div>
+    <div class="ptm-tab-content-item">2222</div>
+    <div class="ptm-tab-content-item">3333</div>
+    <div class="ptm-tab-content-item">4444</div>
+</section>
+<footer class="ptm-nav" id="ptm-footer">
+    <ul class="ptm-bar-tab">
+        <li class="active-warning" id="tabbar1" >
+            <span class="ptm-iconfont ptm-icon-favor"></span>
+            <p>栏目1</p>
+        </li>
+        <li id="tabbar2" >
+            <span class="ptm-iconfont ptm-icon-mark"></span>
+            <p>栏目2</p>
+        </li>
+        <li id="tabbar3" >
+            <span class="ptm-iconfont ptm-icon-like"></span>
+            <p>栏目3</p>
+        </li>
+        <li id="tabbar4" >
+            <span class="ptm-iconfont ptm-icon-my"></span>
+            <p>栏目4</p>
+        </li>
+    </ul>
+</footer>
+<script type="text/javascript" src="./script/zepto.min.js"></script>
+<script type="text/javascript" src="./script/ptm.js"></script>
+<script type="text/javascript">
+    $ptm.tab('.ptm-bar-tab li','.ptm-tab-content-item');
+</script>
+</body>
+</html>

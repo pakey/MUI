@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>Hello APP</title>
+    <link rel="stylesheet" type="text/css" href="./css/ptm.css" />
+    <style>.ptm-bar {
+        margin-bottom: 15px;
+    }
+    </style>
+</head>
+<body>
+<header id="ptm-header" class="ptm-bg-primary">
+    <div class="ptm-bar ptm-bar-nav ptm-bar-primary">
+        <a class="ptm-pull-left" href="index.html">
+            <span class="ptm-iconfont ptm-icon-left ptm-text-bold"></span>返回
+        </a>
+        <div class="ptm-title">进度条</div>
+    </div>
+</header>
+<div class="ptm-content" id="demo1">
+    <div class="ptm-tab">
+        <ul class="ptm-tab-nav">
+            <li class="active">标签一</li>
+            <li>标签二</li>
+            <li>标签三</li>
+        </ul>
+    </div>
+    <div class="ptm-tab-content">
+        <div class="ptm-tab-content-item active">内容一</div>
+        <div class="ptm-tab-content-item">内容二</div>
+        <div class="ptm-tab-content-item">内容三</div>
+    </div>
+</div>
+<div class="ptm-content-padded" style="margin-top:15px;" id="demo2">
+    <div class="ptm-tab">
+        <ul class="ptm-tab-nav ptm-tab-border">
+            <li class="active">标签一</li>
+            <li>标签二</li>
+            <li>标签三</li>
+        </ul>
+    </div>
+    <div class="ptm-tab-content">
+        <div class="ptm-tab-content-item active">内容一</div>
+        <div class="ptm-tab-content-item">内容二</div>
+        <div class="ptm-tab-content-item">内容三</div>
+    </div>
+</div>
+<script type="text/javascript" src="./script/zepto.min.js"></script>
+<script type="text/javascript" src="./script/ptm.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $ptm.tab('#demo1 .ptm-tab li','#demo1 .ptm-tab-content-item');
+        $ptm.tab('#demo2 .ptm-tab li','#demo2 .ptm-tab-content-item');
+    })
+</script>
+</body>
+</html>

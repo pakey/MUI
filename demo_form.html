@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>Hello APP</title>
+    <link rel="stylesheet" type="text/css" href="./css/ptm.css" />
+    <style>
+        .ptm-card {
+            margin-top: 15px;
+        }
+        .ptm-input-addon.ptm-iconfont {
+            font-size: 20px !important;
+        }
+        .ptm-input-row {
+            width: 100% !important;
+        }
+    </style>
+</head>
+<body>
+<header id="ptm-header" class="ptm-bg-primary">
+    <div class="ptm-bar ptm-bar-nav ptm-bar-primary">
+        <a class="ptm-pull-left" href="index.html">
+            <span class="ptm-iconfont ptm-icon-left ptm-text-bold"></span>返回
+        </a>
+        <div class="ptm-title">进度条</div>
+    </div>
+</header>
+<div class="ptm-content ptm-card">
+    <div class="ptm-form">
+        <div class="ptm-input-row">
+            <i class="ptm-input-addon ptm-iconfont ptm-icon-people ptm-text-info"></i>
+            <input type="text" class="ptm-input" placeholder="用户名"/>
+        </div>
+
+        <div class="ptm-input-row">
+            <i class="ptm-input-addon ptm-iconfont ptm-icon-lock ptm-text-warning"></i>
+            <input type="password" id="password" class="ptm-input" placeholder="密码"/>
+            <i class="ptm-input-addon ptm-iconfont ptm-icon-attention ptm-text-default"  onclick="showPassword();" id="showpass-btn"></i>
+        </div>
+        <div class="ptm-input-row">
+            <i class="ptm-input-addon ptm-iconfont ptm-icon-lock ptm-text-warning"></i>
+            <input type="password" class="ptm-input" placeholder="确认密码"/>
+        </div>
+        <div class="ptm-input-row">
+            <input type="number" class="ptm-input" id="code" placeholder="请输入收到的验证码"/>
+                <span class="ptm-input-addon">
+                    <div class="ptm-btn" id="sendVerify" >获取验证码</div>
+                </span>
+        </div>
+
+        <div class="ptm-btn-row">
+            <div class="ptm-btn ptm-btn-block ptm-btn-warning" onclick="return false;">确认</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./script/jquery.min.js"></script>
+<script type="text/javascript" src="./script/ptm.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>
