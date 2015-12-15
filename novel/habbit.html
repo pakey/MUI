@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>PT小说手机模板</title>
+    <link rel="stylesheet" type="text/css" href="../css/ptm.css" />
+    <link rel="stylesheet" type="text/css" href="./css/skin.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+</head>
+<body>
+<header class="ptm-bar ptm-bar-nav  ptm-fix">
+    <a class="ptm-pull-left" href="index.html">
+        <span class="ptm-iconfont ptm-icon-home ptm-text-bold"></span>
+    </a>
+    <div class="ptm-title">阅读设置</div>
+</header>
+<div class="ptm-content ptm-card" style="margin-top:60px;">
+    <ul class="ptm-list-view pt-setting">
+        <li class="ptm-list-view-cell ptm-switch-body peise">
+            <div class="name">阅读配色</div>
+            <div class="value">默认</div>
+        </li>
+        <li class="ptm-list-view-cell ptm-switch-body">
+            <div class="name">字体大小</div>
+            <div class="value">20</div>
+            <div class="ptm-range">
+                <input type="hidden" name="age">
+                <input type="range" class="ptm-range-primary" value="30" max="100" min="1" step="1" id="range"><div class="ptm-range-tip ptm-hide" style="left: 70.0808px;">30</div>
+            </div>
+        </li>
+        <li class="ptm-list-view-cell ptm-switch-body">
+            <div class="name">夜间模式</div>
+            <input type="checkbox" class="ptm-switch ptm-pull-right" checked="">
+        </li>
+        <li class="ptm-list-view-cell ptm-switch-body">
+            <div class="name">自动预读</div>
+            <input type="checkbox" class="ptm-switch ptm-pull-right">
+        </li>
+        <li class="ptm-list-view-cell ptm-switch-body">
+            <div class="name">阅读章数</div>
+            <div class="value">20</div>
+        </li>
+    </ul>
+</div>
+
+<div class="sel ptm-hide">
+    <div class="ptm-alert-shade"></div>
+    <div class="pt-dir-sel" style="background-position: left 50px;">
+        <p class="title">请选择配色</p>
+        <ul>
+            <li class="active">默认</li>
+            <li>牛皮纸</li>
+            <li>护眼</li>
+            <li>女生</li>
+            <li>天蓝</li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="../script/zepto.min.js"></script>
+<script type="text/javascript" src="../script/ptm.js"></script>
+<script type="text/javascript">
+    $('.peise').on('click',function(){
+        $('.sel').removeClass('ptm-hide')
+    })
+    $('.ptm-alert-shade').on('click',function(){
+        $('.sel').removeClass('ptm-hide').addClass('ptm-hide')
+    })
+</script>
+</body>
+</html>
