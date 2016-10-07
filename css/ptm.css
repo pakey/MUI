@@ -89,7 +89,7 @@ a, a:hover {
 	display: none !important;
 }
 .ptm-radius50 {
-	border-radius: 50%;
+	border-radius: 50% !important;
 }
 .ptm-clearfix:after { content: "020"; display: block; height: 0; clear: both; visibility: hidden; }
 .ptm-clearfix { clear: both; zoom: 1; }
@@ -2432,12 +2432,12 @@ input.ptm-counter-input {
 	z-index: 3;
 	top: 180px;
 	left: 50%;
-	margin-left: -3.8em;
 	background: rgba(40, 40, 40, 0.75);
 	text-align: center;
 	border-radius: 5px;
 	color: #FFFFFF;
 	font-size: 14px;
+	-webkit-transform: translateX(-50%);
 }
 .ptm-toast-content {
 	margin: 10px 25px;
@@ -2455,24 +2455,6 @@ input.ptm-counter-input {
 	-webkit-background-size: auto 37px;
 	-webkit-animation: am-rotate2 1s steps(12) infinite;
 	margin: 0 auto 5px
-}
-@-webkit-keyframes am-rotate {
-	from {
-		background-position: 0 0
-	}
-
-	to {
-		background-position: -240px 0
-	}
-}
-@-webkit-keyframes am-rotate2 {
-	from {
-		background-position: 0 0
-	}
-
-	to {
-		background-position: -444px 0
-	}
 }
 .ptm-actionsheet-mask {
 	display: none;
@@ -2578,4 +2560,37 @@ input.ptm-counter-input {
 }
 .ptm-line-text span{
 	padding: 0 25px;
+}
+
+
+@-webkit-keyframes am-rotate {
+	from {
+		background-position: 0 0
+	}
+
+	to {
+		background-position: -240px 0
+	}
+}
+@-webkit-keyframes am-rotate2 {
+	from {
+		background-position: 0 0
+	}
+
+	to {
+		background-position: -444px 0
+	}
+}
+
+@-webkit-keyframes rotate {
+	0%   { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes bounce {
+	0%, 100% {-webkit-transform: scale(0.0) }
+	50% {-webkit-transform: scale(1.0)}
+}
+@-webkit-keyframes fadeIn {
+	from { opacity: 0.3; }
+	to {  }
 }
